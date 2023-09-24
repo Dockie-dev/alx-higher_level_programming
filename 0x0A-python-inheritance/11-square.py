@@ -27,6 +27,7 @@ class Square(Rectangle):
 
     def __init__(self, size):
         """Initialize a Square instance."""
+        self.integer_validator("size", size)  # Validate size is a positive integer
         super().__init__(size, size)
 
     def __str__(self):
